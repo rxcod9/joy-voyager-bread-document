@@ -1,11 +1,11 @@
 <?php
 
-namespace Joy\VoyagerBreadReplaceKeyword\Database\Seeders;
+namespace Joy\VoyagerBreadDocument\Database\Seeders;
 
-use Joy\VoyagerBreadReplaceKeyword\Models\ReplaceKeyword;
+use Joy\VoyagerBreadDocument\Models\Document;
 use Illuminate\Database\Seeder;
 
-class ReplaceKeywordsTableSeeder extends Seeder
+class DocumentsTableSeeder extends Seeder
 {
     /**
      * Auto generated seed file.
@@ -14,20 +14,20 @@ class ReplaceKeywordsTableSeeder extends Seeder
      */
     public function run()
     {
-        if (ReplaceKeyword::query()->count() > 0) {
+        if (Document::query()->count() > 0) {
             return false;
         }
 
         $count = 100;
-        ReplaceKeyword::factory()
+        Document::factory()
             ->count($count)
             ->state(function (array $attributes) use ($count) {
                 return [
-                    'name' => 'ReplaceKeyword ' . time()
+                    'name' => 'Document ' . time()
                         . ' ' . rand(1, $count)
                         . ' ' . rand(1, $count)
                         . ' ' . rand(1, $count),
-                    'description' => 'ReplaceKeyword Description ' . time()
+                    'description' => 'Document Description ' . time()
                         . ' ' . rand(1, $count)
                         . ' ' . rand(1, $count)
                         . ' ' . rand(1, $count)
