@@ -18,7 +18,7 @@ class DataTypesTableSeeder extends Seeder
                 'name'                  => 'documents',
                 'display_name_singular' => __('joy-voyager-bread-document::seeders.data_types.document.singular'),
                 'display_name_plural'   => __('joy-voyager-bread-document::seeders.data_types.document.plural'),
-                'icon'                  => 'voyager-bread',
+                'icon'                  => 'voyager-bread voyager-bread-document voyager-documentation',
                 'model_name'            => 'Joy\\VoyagerBreadDocument\\Models\\Document',
                 // 'policy_name'           => 'Joy\\VoyagerBreadDocument\\Policies\\DocumentPolicy',
                 // 'controller'            => 'Joy\\VoyagerBreadDocument\\Http\\Controllers\\VoyagerBreadDocumentController',
