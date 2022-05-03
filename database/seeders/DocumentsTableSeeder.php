@@ -18,7 +18,7 @@ class DocumentsTableSeeder extends Seeder
             return false;
         }
 
-        $count = 100;
+        $count = 20;
         Document::factory()
             ->count($count)
             ->state(function (array $attributes) use ($count) {
